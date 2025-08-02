@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+custom:
+  greeting: "Hello from GitLab config for order-service"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
