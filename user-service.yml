@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+custom:
+  greeting: "Hello from GitLab config for user-service"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
