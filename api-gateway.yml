@@ -11,6 +11,9 @@ spring:
   
   cloud:
     gateway:
+      default-filters:
+        - AddRequestHeader=traceparent, {request.headers.traceparent}
+        - AddRequestHeader=baggage, {request.headers.baggage}
       routes:
         - id: user-service
           uri: lb://user-service
